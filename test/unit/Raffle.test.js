@@ -243,7 +243,8 @@ const {
 										.toString()
 								);
 							} catch (error) {
-								reject();
+								console.error(error);
+								reject(error);
 							}
 							resolve();
 						});
